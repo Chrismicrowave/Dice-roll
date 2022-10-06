@@ -20,25 +20,48 @@ h1{
   display:flex;
 }
 
-
 #game{
-  width: 85vw;
+  width:100%;
 }
 
-#npc{
+#npcW{
   text-align: center;
-  height: 50vw;
+  height: 25vw;
   background-color: grey;
   padding: 5px;
   color: black;
 }
 
-#drawing-board{
-  height: 50vw;
-  background-color: beige;
+#diceroll{
+  height: 25vw;
+  background-color: purple;
 }
 
-#toolbar{
+#buttons{
+  background-color: yellow;
+  height: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#done{
+  margin-left: 15vw;
+}
+#clear{
+  margin-right: 15vw;
+}
+
+#drawing-board{
+  height: 45vw;
+  width:100%;
+  background-color: beige;
+
+}
+
+
+
+/* #toolbar{
   display:flex;
   flex-direction: column;
   padding:5px;
@@ -64,4 +87,4 @@ h1{
   border-radius:4px;
   color:white;
   padding:2px;
-}
+} */

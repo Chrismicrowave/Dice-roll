@@ -1,5 +1,5 @@
 const canvas = document.getElementById('drawing-board');
-const toolbar = document.getElementById('toolbar');
+const buttons = document.getElementById('buttons');
 const ctx = canvas.getContext('2d');
 
 const canvasOffsetX = canvas.offsetLeft;
@@ -9,12 +9,12 @@ canvas.width = canvas.offsetWidth;
 canvas.height = canvas.offsetHeight;
 
 let isPainting = false;
-let lineWidth = 5;
+let lineWidth = 20;
 let startX;
 let startY;
 
 
-toolbar.addEventListener('click', e => {
+buttons.addEventListener('click', e => {
   if (e.target.id ==='clear'){
     ctx.clearRect(0,0, canvas.width, canvas.height);
   };
@@ -40,7 +40,7 @@ toolbar.addEventListener('click', e => {
   };//done button end
 });//toolbar listener end
 
-toolbar.addEventListener('change', e=>{
+buttons.addEventListener('change', e=>{
   if(e.target.id ==='stroke'){
     ctx.strokeStyle = e.target.value;
   };
