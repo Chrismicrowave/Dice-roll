@@ -15,7 +15,10 @@ data = imgPrep.imgPrep(img)
 
 a = data.reshape(1,784)
 p = svcclf.predict(a)
-pStr = str(p)
+p = str(p[0])
+
 
 with open('prediction.txt','w') as f:
-    f.write(pStr)
+    f.write(p)
+
+print (p)

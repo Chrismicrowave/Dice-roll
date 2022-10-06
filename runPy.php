@@ -1,6 +1,6 @@
 <?php
 
-$output = shell_exec('python guess.py');
+$output = shell_exec('python runMLmodel.py');
 return $output;
 
 ?>

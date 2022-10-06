@@ -6,14 +6,14 @@ body{
   color:white;
 }
 
-h1{
+/* h1{
   background: #7F7FD5;
   background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
   background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
   background-clip: text;
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
-}
+} */
 
 .container{
   height:100%;
@@ -27,18 +27,14 @@ h1{
 #npcW{
   text-align: center;
   height: 25vw;
-  background-color: grey;
+  background-color: beige;
   padding: 5px;
   color: black;
-}
-
-#diceroll{
-  height: 25vw;
-  background-color: purple;
+  font-size: 40px;
 }
 
 #buttons{
-  background-color: yellow;
+  background-color: black;
   height: 5vw;
   display: flex;
   justify-content: center;
@@ -55,10 +51,140 @@ h1{
 #drawing-board{
   height: 45vw;
   width:100%;
-  background-color: beige;
+  background-color: #d4d2b0;
 
 }
 
+/* dice css */
+
+
+.diceContainer{
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+  font-family: 'fontawesome';
+  height: 30vw;
+  background-color: beige;
+}
+.diceContainer .cube{
+  position: relative;
+  left: 50%;
+  top: 40%;
+  height: 10vw;
+  width: 10vw;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  transform: rotateX(135deg) rotateY(-217deg) rotateZ(-88deg);
+}
+.diceContainer .cube div{
+  position: absolute;
+  box-sizing: border-box;
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+  border:1px solid #eee;
+  color: #fff;
+}
+.diceContainer .cube div span{
+  font-size: 1vw;
+  font-family: 'fontawesome';
+}
+.diceContainer .cube .front{
+  background: #000;
+  transform: translateZ(2vw);
+}
+.diceContainer .cube .back{
+  background: #000;
+  transform: translateZ(-8vw) rotateY(180deg);
+}
+.diceContainer .cube .right{
+  background: #000;
+  transform-origin: top right;
+  transform: rotateY(-270deg) translateX(8vw);
+}
+.diceContainer .cube .left{
+  background: #000;
+  transform-origin: center left;
+  transform: rotateY(270deg) translateX(-8vw);
+}
+.diceContainer .cube .top{
+  background: #000;
+  transform-origin: top center;
+  transform: rotateX(-270deg) translateY(-8vw);
+}
+.diceContainer .cube .bottom{
+  background: #000;
+  transform-origin: bottom center;
+  transform: rotateX(270deg) translateY(8vw);
+}
+
+/*DOT ALIGNMENT */
+.diceContainer .cube .front span,.diceContainer .cube .left span:nth-child(1),
+.diceContainer .cube .right span:nth-child(1){
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.diceContainer .cube .top span:nth-child(1),.diceContainer .cube .left span:nth-child(2),
+.diceContainer .cube .right span:nth-child(2),
+.diceContainer .cube .bottom span:nth-child(1){
+  position: absolute;
+  top: 2vw;
+  left: 2vw;
+}
+.diceContainer .cube .top span:nth-child(2),.diceContainer .cube .left span:nth-child(3),
+.diceContainer .cube .right span:nth-child(3),
+.diceContainer .cube .bottom span:nth-child(2){
+  position: absolute;
+  bottom: 2vw;
+  right: 2vw;
+}
+.diceContainer .cube .right span:nth-child(4),
+.diceContainer .cube .bottom span:nth-child(3){
+  position: absolute;
+  top: 2vw;
+  right: 2vw;
+}
+.diceContainer .cube .right span:nth-child(5),
+.diceContainer .cube .bottom span:nth-child(4){
+  position: absolute;
+  bottom: 2vw;
+  left: 2vw;
+}
+.diceContainer .cube .back pre{
+  font-size: 10px;
+  font-family: 'fontawesome';
+  margin: 0;
+}
+.diceContainer .cube .back .firstPre{
+  position: absolute;
+  top: 2vw;
+  left: 2vw;
+}
+.diceContainer .cube .back .secondPre{
+  position: absolute;
+  bottom: 2vw;
+  right: 2vw;
+}
+@keyframes animate {
+  25%{
+    transform: rotateX(45deg) rotateY(65deg) rotateZ(35deg);
+    top: 0%;
+  }
+  50%{
+    transform: rotateX(145deg) rotateY(165deg) rotateZ(135deg);
+    top: 6%;
+  }
+  75%{
+    transform: rotateX(276deg) rotateY(256deg) rotateZ(246deg);
+    top: 9%;
+  }
+  100%{
+    transform: rotateX(376deg) rotateY(356deg) rotateZ(346deg);
+    top: 12%;
+  }
+
+}
 
 
 /* #toolbar{

@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=chrome">
   <meata name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="styles.css">
   <title>Number Guess</title>
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -31,13 +32,47 @@
 
       <div id='npcW'>
         <div id='npc'>
-          <p>Please wrtie your number..</p>
+          <p>Please write your number..</p>
         </div>
       </div>
 
-      <div id='diceroll'>
+      <div class="diceContainer">
+    		<div class="cube" id="cube">
+    			<div class="front">
+    				<span class="fas fa-circle"></span>
+    			</div>
+    			<div class="back">
+    					<!-- i use pre tag to align dots -->
+    					<pre class="firstPre"><span class="fas fa-circle"></span>    <span class="fas fa-circle"></span>    <span class="fas fa-circle"></span></pre><br>
+    					<pre class="secondPre"><span class="fas fa-circle"></span>    <span class="fas fa-circle"></span>    <span class="fas fa-circle"></span></pre>
+    			</div>
+    			<div class="top">
+    				<span class="fas fa-circle"></span>
+    				<span class="fas fa-circle"></span>
+    			</div>
+    			<div class="left">
+    				<span class="fas fa-circle"></span>
+    				<span class="fas fa-circle"></span>
+    				<span class="fas fa-circle"></span>
 
-      </div>
+    			</div>
+    			<div class="right">
+    				<span class="fas fa-circle"></span>
+    				<span class="fas fa-circle"></span>
+    				<span class="fas fa-circle"></span>
+    				<span class="fas fa-circle"></span>
+    				<span class="fas fa-circle"></span>
+
+    			</div>
+    			<div class="bottom">
+    				<span class="fas fa-circle"></span>
+    				<span class="fas fa-circle"></span>
+    				<span class="fas fa-circle"></span>
+    				<span class="fas fa-circle"></span>
+
+    			</div>
+    		</div>
+    	</div>
 
       <div id='playerW'>
         <div class="drawing-board">
