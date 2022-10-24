@@ -4,7 +4,8 @@ A small web app to recognize handwriting number input with a SVM model trained w
 
 ![](https://github.com/Chrismicrowave/number-guess/blob/main/demo.gif)
 
-![](blob:https://whimsical.com/96929889-d31e-4dcc-9d07-f2f4cc86a797)
+![](https://github.com/Chrismicrowave/number-guess/blob/main/app%20flow.png)
+[![](blob:https://whimsical.com/96929889-d31e-4dcc-9d07-f2f4cc86a797)
 
 
 Credits:
