@@ -21,37 +21,46 @@ body{
 }
 
 #game{
+  background: url(images/bg.png) no-repeat top center fixed;
+  background-size:contain;
+  /* -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
+  position:relative;
   width:100%;
 }
 
 #npcW{
   text-align: center;
-  height: 25vw;
-  background-color: beige;
+  height: 50vh;
+  /* background-color: beige; */
   padding: 5px;
   color: black;
-  font-size: 40px;
+  font-size: 20px;
+  margin-top:2%;
+  margin-left: 40%;
 }
 
 #buttons{
   background-color: black;
-  height: 5vw;
+  height: 5vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 #done{
-  margin-left: 15vw;
+  margin-left: 15vh;
 }
 #clear{
-  margin-right: 15vw;
+  margin-right: 15vh;
 }
 
 #drawing-board{
-  height: 45vw;
+  height: 30vh;
   width:100%;
-  background-color: #d4d2b0;
+  /* background-color: #d4d2b0; */
 
 }
 
@@ -62,8 +71,8 @@ body{
   perspective: 1000px;
   perspective-origin: 50% 50%;
   font-family: 'fontawesome';
-  height: 30vw;
-  background-color: beige;
+  height: 20vw;
+  /* background-color: beige; */
 }
 .diceContainer .cube{
   position: relative;

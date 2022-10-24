@@ -10,7 +10,7 @@ canvas.width = canvas.offsetWidth;
 canvas.height = canvas.offsetHeight;
 
 let isPainting = false;
-let lineWidth = 20;
+let lineWidth = 15;
 let startX;
 let startY;
 let num;
